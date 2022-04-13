@@ -4,93 +4,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/resume/icon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/resume/icon.jpg" type="image/x-icon">
     <title>陳奕安的個人履歷</title>
     <style>
         *{
-            margin: 0px;
+            padding: 0;
+            margin: 0;
         }
-        .container{
+        body{
+            background-color: #F4F5F0;
+        }
+        img{
+            width: 100%;
+        }
+        ol,ul{
+            padding-inline-start: 40px;
+        }
+        .Container{
+            background-color: #FEFFFA;
             width: 980px;
-            padding: 40px 20px;
             margin: 0px auto;
-            background-color: rgb(254, 222, 166);
+            padding: 40px 20px;
+            box-shadow: 0px 0px 1px 1px rgb(231, 231, 231);
         }
-        .head-img{
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-        }
-        h2{
-            margin-top: 20px;
-        }
-        hr{
-            margin: 30px 0px;
-        }
-        a{
-            color: black;
+        .Title{
+            font-size: 36px;
         }
         .img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        hr{
+            margin: 20px 0px;
+        }
+        .motto{
+            border-left: 3px solid rgb(128, 127, 127);
+            margin-left: 8px;
+            padding-left: 20px;
+        }
+        .mt-32{
+            margin-top: 32px;
+        }
+        .Education img{
+            width: 30px;
+            margin-right: 16px;
+        }
+        .certificate-img{
+            margin-top: 8px;
             width: 300px;
-            margin-bottom: 20px;
         }
         table{
-            background: rgb(255, 255, 255);
-            margin-top: 20px;
-            border: 2px solid rgba(0, 0, 0, 0.8);
-            width: 870px;
+            width: 940px;
+            text-align: center;
+            background-color: #C6D4FA;
+            border: 2px solid rgb(75, 75, 75);
         }
         table caption{
-            background-color: rgb(124, 51, 133);
-            color: aliceblue;
-            border: 2px solid rgba(0, 0, 0, 0.8);
             font-size: 24px;
+            color: #F5F8FF;
+            background-color: #607D96;
+            line-height: 50px;
+            height: 50px;
+            border-top: 2px solid rgb(75, 75, 75);
+            border-left: 2px solid rgb(75, 75, 75);
+            border-right: 2px solid rgb(75, 75, 75);
+        }
+        table,th,td{
+            border-collapse: collapse;
         }
         table th{
-            width: 100px;
+            background-color: #AFC8DE;
+            height: 40px;
+            width: 12.14285714%;
         }
         table th:first-child{
-            width: 170px;
+            width: 15%;
         }
-        table td,th{
-            background-color: rgb(136, 89, 142);
-            color: aliceblue;
-            font-size: 15px;
-            border: 1px solid rgba(0, 0, 0, 0.8);
-            text-align: center;
-        }
-        table th {
-            height: 40px;
+        table th:not(th:first-child){
+            border-left: 1px solid #7886AD;
         }
         table td{
+            border: 1px solid #7886AD;
             height: 60px;
+        }
+        table .ClassTime{
+            background-color: #CDBBFD;
+        }
+        table .holiday{
+            background-color: #A8A8E3;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>陳奕安<br>CHEN YI-AN</h1>
-        <img src="./img/resume/110111130.jpg" class="head-img" alt="">
+    <div class="Container">
+        <h1 class="Title">
+            陳奕安 <br> CHEN, YI-AN
+        </h1>
+        <div class="img mt-32">
+            <img src="img/resume/110111130.jpg" alt="頭像" width="300">
+        </div>
         <hr>
-        <p>錢唯一不會背叛你的<br>唯有利益才是絕對</p>
+        <p class="motto">錢是社會的根基 <br> 錢不會背叛人 <br> 唯有利益是絕對</p>
         <hr>
-        <h2>學歷</h2>
-        <ol>
-            <li><a href="http://www.mhups.tp.edu.tw/">臺北市內湖區明湖國民小學</a></li>
-            <li><a href="https://www.mhjh.tp.edu.tw/">臺北市立明湖國民中學</a></li>
-            <li><a href="https://web.nihs.tp.edu.tw/">臺北市立內湖高級工業職業學校</a></li>
-            <li><a href="https://www.aeust.edu.tw/">亞東科技大學</a></li>
-        </ol>
-        <h2>證照</h2>
+        <div class="Education mt-32">
+            <h2 class="SubTitle">學歷</h2>
+            <ol>
+                <li>
+                    <a href="">
+                        <h3><img src="img/resume/school01.jpg" alt="">臺北市內湖區明湖國民小學</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        
+                        <h3><img src="img/resume/school02.jpg" alt="">臺北市立明湖國民中學</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3><img src="img/resume/school03.jpg" alt="">臺北市立內湖高級工業職業學校</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3><img src="img/resume/school04.jpg" alt="">亞東科技大學</h3>
+                    </a>
+                </li>
+            </ol>
+        </div>
+        <div class="Certificate mt-32">
+            <h2 class="SubTitle">證照</h2>
             <ul>
                 <li>
-                    <a href="http://www.1111edu.com.tw/edu_mobile/licence/detail.php?autono=385">電腦軟體應用丙級</a>
+                    <a href="">電腦軟體應用丙級</a>
                     <br>
-                    <img src="./img/resume/01.jpg" class="img" alt="">
+                    <img src="img/resume/01.jpg" class="certificate-img" alt="">
                 </li>
             </ul>
-        <table >
+        </div>
+        <table class="mt-32">
             <caption>功課表</caption>
             <thead>
                 <tr>
@@ -106,170 +160,87 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>第1節<br>(08:10-09:00)</td>
-                    <td></td>
+                    <td class="ClassTime">第1節<br>(08:10-09:00)</td>
+                    <td class="holiday"></td>
                     <td></td>
                     <td>英文 <br> 10414</td>
                     <td>進階程式設計 <br> 30803</td>
                     <td></td>
                     <td>法律與生活 <br> 10402</td>
-                    <td></td>
+                    <td class="holiday"></td>
                 </tr>
                 <tr>
-                    <td>第2節 <br> (09:10-10:00)</td>
-                    <td></td>
+                    <td class="ClassTime">第2節 <br> (09:10-10:00)</td>
+                    <td class="holiday"></td>
                     <td>經濟學 <br> 10417</td>
                     <td>英文 <br> 10414</td>
                     <td>進階程式設計 <br> 30803</td>
                     <td>資訊管理導論 <br> 10407</td>
                     <td>法律與生活 <br> 10402</td>
-                    <td></td>
+                    <td class="holiday"></td>
                 </tr>
                 <tr>
-                    <td>第3節 <br> (10:10-11:00)</td>
-                    <td></td>
+                    <td class="ClassTime">第3節 <br> (10:10-11:00)</td>
+                    <td class="holiday"></td>
                     <td>經濟學 <br> 10417</td>
                     <td>國文 <br> 10506</td>
                     <td></td>
                     <td>資訊管理導論 <br> 10407</td>
                     <td>體育(撞球) <br> W0101</td>
-                    <td></td>
+                    <td class="holiday"></td>
                 </tr>
                 <tr>
-                    <td>第4節 <br> (11:10-12:00)</td>
-                    <td></td>
+                    <td class="ClassTime">第4節 <br> (11:10-12:00)</td>
+                    <td class="holiday"></td>
                     <td>經濟學 <br> 10417</td>
                     <td>國文 <br> 10506</td>
                     <td></td>
                     <td>資訊管理導論 <br> 10407</td>
                     <td>體育(撞球) <br> W0101</td>
-                    <td></td>
+                    <td class="holiday"></td>
                 </tr>
                 <tr>
-                    <td>第5節 <br> (13:10-14:00)</td>
-                    <td></td>
+                    <td class="ClassTime">第5節 <br> (13:10-14:00)</td>
+                    <td class="holiday"></td>
                     <td>進階程式設計 <br> 30803</td>
                     <td>網頁設計 <br> 30803</td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
+                    <td class="holiday"></td>
                 </tr>
                 <tr>
-                    <td>第6節 <br> (14:10-15:00)</td>
-                    <td></td>
+                    <td class="ClassTime">第6節 <br> (14:10-15:00)</td>
+                    <td class="holiday"></td>
                     <td>進階程式設計 <br> 30803</td>
                     <td>網頁設計 <br> 30803</td>
                     <td></td>
                     <td>會計學 <br> 10513</td>
                     <td></td>
-                    <td></td>
+                    <td class="holiday"></td>
                 </tr>
-                <tr>   
-                    <td>第7節 <br> (15:10-16:00)</td>
-                    <td></td>
+                <tr>
+                    <td class="ClassTime">第7節 <br> (15:10-16:00)</td>
+                    <td class="holiday"></td>
                     <td></td>
                     <td>網頁設計 <br> 30803</td>
                     <td></td>
                     <td>會計學 <br> 10513</td>
                     <td></td>
-                    <td></td>
+                    <td class="holiday"></td>
                 </tr>
                 <tr>
-                    <td>第8節 <br> (16:10-17:00)</td>
-                    <td></td>
+                    <td class="ClassTime">第8節 <br> (16:10-17:00)</td>
+                    <td class="holiday"></td>
                     <td></td>
                     <td>網頁設計 <br> 30803</td>
                     <td></td>
                     <td>會計學 <br> 10513</td>
                     <td></td>
-                    <td></td>
+                    <td class="holiday"></td>
                 </tr>
-                <tr>
-                    <td>第9節 <br> (17:00-17:50)</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>第10節 <br> (18:00-18:20)</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>第11節 <br> (18:30-19:15)</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>第12節 <br> (19:15-20:00)</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>第13節 <br> (20:10-20:55)</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>第14節 <br> (20:55-21:40)</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>第15節 <br> (21:40-22:25)</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>第16節 <br> (12:10-13:00)</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                  
             </tbody>
         </table>
     </div>
-
 </body>
 </html>
-
