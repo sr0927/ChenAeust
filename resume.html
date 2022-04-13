@@ -24,7 +24,7 @@
             background-color: #FEFFFA;
             width: 980px;
             margin: 0px auto;
-            padding: 40px 20px;
+            padding: 80px 20px;
             box-shadow: 0px 0px 1px 1px rgb(231, 231, 231);
         }
         .Title{
@@ -44,12 +44,6 @@
             margin-left: 8px;
             padding-left: 20px;
         }
-        .mt-8{
-            margin-top: 8px;
-        }
-        .mt-32{
-            margin-top: 32px;
-        }
         .Education img{
             width: 30px;
             margin-right: 16px;
@@ -59,6 +53,7 @@
             width: 300px;
         }
         table{
+            margin: 0px auto;
             width: 940px;
             text-align: center;
             background-color: #C6D4FA;
@@ -92,15 +87,55 @@
             border: 1px solid #7886AD;
             height: 60px;
         }
+        table ul{
+            list-style: none;
+            padding-inline-start: 10px;
+        }
         table .ClassTime{
             background-color: #CDBBFD;
+        }
+        table .weekday{
+            position: relative;
+        }
+        table .hint{
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0;
+            top: -50px;
+            left: 130px;
+            width: 250px;
+            padding: 10px 0px;
+            font-size: 16px;
+            position: absolute;
+            color: #000;
+            background-color: #FEF8D2;
+            box-shadow: 2px 2px 2px 2px rgb(75, 75, 75);
+            text-align: start;
+            z-index: 2;
+            transform: translateY(-30%);
+            transition: .3s;
         }
         table .weekday:hover{
             color: #F5F8FF;
             background-color: #9BA6C4;
         }
+        table .weekday:hover .hint{
+            z-index: 2;
+            transform: translateY(0);
+            opacity: 1;
+        }
         table .holiday{
             background-color: #A8A8E3;
+        }
+
+        .mt-8{
+            margin-top: 8px;
+        }
+        .mt-32{
+            margin-top: 32px;
+        }
+        .mb-32{
+            margin-bottom: 32px;
         }
     </style>
 </head>
@@ -156,7 +191,7 @@
                 </li>
             </ul>
         </div>
-        <table class="mt-32">
+        <table class="mt-32 mb-32">
             <caption>功課表</caption>
             <thead>
                 <tr>
@@ -175,47 +210,317 @@
                     <td class="ClassTime">第1節<br>(08:10-09:00)</td>
                     <td class="holiday"></td>
                     <td class="weekday"></td>
-                    <td class="weekday">英文 <br> 10414</td>
-                    <td class="weekday">進階程式設計 <br> 30803</td>
+                    <td class="weekday">英文 <br> 10414
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1CC1003</li>
+                                <li>課程名稱: 英文</li>
+                                <li>開課系所: 日間部四技通識中心</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: S</li>
+                                <li>上課地點: 10414</li>
+                                <li>學分: 2</li>
+                                <li>教師姓名: 陳韻如</li>
+                                <li>必選修: 基礎通識</li>
+                                <li>冊別: 2</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="weekday">進階程式設計 <br> 30803
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1MI1049</li>
+                                <li>課程名稱: 進階程式設計</li>
+                                <li>開課系所: 日間部四技資訊管理系</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: S</li>
+                                <li>上課地點: 30803</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 陳鵬文</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
                     <td class="weekday"></td>
-                    <td class="weekday">法律與生活 <br> 10402</td>
+                    <td class="weekday">法律與生活 <br> 10402
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1CC1351D</li>
+                                <li>課程名稱: 法律與生活</li>
+                                <li>開課系所: 日間部四技通識中心</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: P</li>
+                                <li>上課地點: 10402</li>
+                                <li>學分: 2</li>
+                                <li>教師姓名: 陳俊豪</li>
+                                <li>必選修: 博雅通識</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
                     <td class="holiday"></td>
                 </tr>
                 <tr>
                     <td class="ClassTime">第2節 <br> (09:10-10:00)</td>
                     <td class="holiday"></td>
-                    <td class="weekday">經濟學 <br> 10417</td>
-                    <td class="weekday">英文 <br> 10414</td>
-                    <td class="weekday">進階程式設計 <br> 30803</td>
-                    <td class="weekday">資訊管理導論 <br> 10407</td>
-                    <td class="weekday">法律與生活 <br> 10402</td>
+                    <td class="weekday">經濟學 <br> 10417
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1HM1002</li>
+                                <li>課程名稱: 經濟學</li>
+                                <li>開課系所: 日間部四技醫護暨管理學院</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: S</li>
+                                <li>上課地點: 10417</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 洪維強</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="weekday">英文 <br> 10414
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1CC1003</li>
+                                <li>課程名稱: 英文</li>
+                                <li>開課系所: 日間部四技通識中心</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: S</li>
+                                <li>上課地點: 10414</li>
+                                <li>學分: 2</li>
+                                <li>教師姓名: 陳韻如</li>
+                                <li>必選修: 基礎通識</li>
+                                <li>冊別: 2</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="weekday">進階程式設計 <br> 30803
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1MI1049</li>
+                                <li>課程名稱: 進階程式設計</li>
+                                <li>開課系所: 日間部四技資訊管理系</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: S</li>
+                                <li>上課地點: 30803</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 陳鵬文</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="weekday">資訊管理導論 <br> 10407
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1MI1001</li>
+                                <li>課程名稱: 資訊管理導論</li>
+                                <li>開課系所: 日間部四技資訊管理系</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: A</li>
+                                <li>上課地點: 10407</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 蔡文隆</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="weekday">法律與生活 <br> 10402
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1CC1351D</li>
+                                <li>課程名稱: 法律與生活</li>
+                                <li>開課系所: 日間部四技通識中心</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: P</li>
+                                <li>上課地點: 10402</li>
+                                <li>學分: 2</li>
+                                <li>教師姓名: 陳俊豪</li>
+                                <li>必選修: 博雅通識</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
                     <td class="holiday"></td>
                 </tr>
                 <tr>
                     <td class="ClassTime">第3節 <br> (10:10-11:00)</td>
                     <td class="holiday"></td>
-                    <td class="weekday">經濟學 <br> 10417</td>
-                    <td class="weekday">國文 <br> 10506</td>
+                    <td class="weekday">經濟學 <br> 10417
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1HM1002</li>
+                                <li>課程名稱: 經濟學</li>
+                                <li>開課系所: 日間部四技醫護暨管理學院</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: S</li>
+                                <li>上課地點: 10417</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 洪維強</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="weekday">國文 <br> 10506
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1CC1001</li>
+                                <li>課程名稱: 國文</li>
+                                <li>開課系所: 日間部四技通識中心</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: S</li>
+                                <li>上課地點: 10506</li>
+                                <li>學分: 2</li>
+                                <li>教師姓名: 張又勻</li>
+                                <li>必選修: 基礎通識</li>
+                                <li>冊別: 2</li>
+                            </ul>
+                        </div>
+                    </td>
                     <td class="weekday"></td>
-                    <td class="weekday">資訊管理導論 <br> 10407</td>
-                    <td class="weekday">體育(撞球) <br> W0101</td>
+                    <td class="weekday">資訊管理導論 <br> 10407
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1MI1001</li>
+                                <li>課程名稱: 資訊管理導論</li>
+                                <li>開課系所: 日間部四技資訊管理系</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: A</li>
+                                <li>上課地點: 10407</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 蔡文隆</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="weekday">體育(撞球) <br> W0101
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1CC1998I</li>
+                                <li>課程名稱: 體育(撞球)</li>
+                                <li>開課系所: 日間部四技通識中心</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: P</li>
+                                <li>上課地點: W0101</li>
+                                <li>學分: 0</li>
+                                <li>教師姓名: 徐煒杰</li>
+                                <li>必選修: 基礎通識</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
                     <td class="holiday"></td>
                 </tr>
                 <tr>
                     <td class="ClassTime">第4節 <br> (11:10-12:00)</td>
                     <td class="holiday"></td>
-                    <td class="weekday">經濟學 <br> 10417</td>
-                    <td class="weekday">國文 <br> 10506</td>
+                    <td class="weekday">經濟學 <br> 10417
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1HM1002</li>
+                                <li>課程名稱: 經濟學</li>
+                                <li>開課系所: 日間部四技醫護暨管理學院</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: S</li>
+                                <li>上課地點: 10417</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 洪維強</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="weekday">國文 <br> 10506
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1CC1001</li>
+                                <li>課程名稱: 國文</li>
+                                <li>開課系所: 日間部四技通識中心</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: S</li>
+                                <li>上課地點: 10506</li>
+                                <li>學分: 2</li>
+                                <li>教師姓名: 張又勻</li>
+                                <li>必選修: 基礎通識</li>
+                                <li>冊別: 2</li>
+                            </ul>
+                        </div>
+                    </td>
                     <td class="weekday"></td>
-                    <td class="weekday">資訊管理導論 <br> 10407</td>
-                    <td class="weekday">體育(撞球) <br> W0101</td>
+                    <td class="weekday">資訊管理導論 <br> 10407
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1MI1001</li>
+                                <li>課程名稱: 資訊管理導論</li>
+                                <li>開課系所: 日間部四技資訊管理系</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: A</li>
+                                <li>上課地點: 10407</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 蔡文隆</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="weekday">體育(撞球) <br> W0101
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1CC1998I</li>
+                                <li>課程名稱: 體育(撞球)</li>
+                                <li>開課系所: 日間部四技通識中心</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: P</li>
+                                <li>上課地點: W0101</li>
+                                <li>學分: 0</li>
+                                <li>教師姓名: 徐煒杰</li>
+                                <li>必選修: 基礎通識</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
                     <td class="holiday"></td>
                 </tr>
                 <tr>
                     <td class="ClassTime">第5節 <br> (13:10-14:00)</td>
                     <td class="holiday"></td>
-                    <td class="weekday">進階程式設計 <br> 30803</td>
-                    <td class="weekday">網頁設計 <br> 30803</td>
+                    <td class="weekday">進階程式設計 <br> 30803
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1MI1049</li>
+                                <li>課程名稱: 進階程式設計</li>
+                                <li>開課系所: 日間部四技資訊管理系</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: S</li>
+                                <li>上課地點: 30803</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 陳鵬文</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="weekday">網頁設計 <br> 30803
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1MI1045</li>
+                                <li>課程名稱: 網頁設計</li>
+                                <li>開課系所: 日間部四技資訊管理系</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: A</li>
+                                <li>上課地點: 30803</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 葉乙璇</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div> 
+                    </td>
                     <td class="weekday"></td>
                     <td class="weekday"></td>
                     <td class="weekday"></td>
@@ -224,10 +529,55 @@
                 <tr>
                     <td class="ClassTime">第6節 <br> (14:10-15:00)</td>
                     <td class="holiday"></td>
-                    <td class="weekday">進階程式設計 <br> 30803</td>
-                    <td class="weekday">網頁設計 <br> 30803</td>
+                    <td class="weekday">進階程式設計 <br> 30803
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1MI1049</li>
+                                <li>課程名稱: 進階程式設計</li>
+                                <li>開課系所: 日間部四技資訊管理系</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: S</li>
+                                <li>上課地點: 30803</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 陳鵬文</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="weekday">網頁設計 <br> 30803
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1MI1045</li>
+                                <li>課程名稱: 網頁設計</li>
+                                <li>開課系所: 日間部四技資訊管理系</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: A</li>
+                                <li>上課地點: 30803</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 葉乙璇</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>    
+                    </td>
                     <td class="weekday"></td>
-                    <td class="weekday">會計學 <br> 10513</td>
+                    <td class="weekday">會計學 <br> 10513
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1MI2086</li>
+                                <li>課程名稱: 會計學</li>
+                                <li>開課系所: 日間部四技資訊管理系</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: A</li>
+                                <li>上課地點: 10513</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 賴鍵元</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
                     <td class="weekday"></td>
                     <td class="holiday"></td>
                 </tr>
@@ -235,9 +585,39 @@
                     <td class="ClassTime">第7節 <br> (15:10-16:00)</td>
                     <td class="holiday"></td>
                     <td class="weekday"></td>
-                    <td class="weekday">網頁設計 <br> 30803</td>
+                    <td class="weekday">網頁設計 <br> 30803
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1MI1045</li>
+                                <li>課程名稱: 網頁設計</li>
+                                <li>開課系所: 日間部四技資訊管理系</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: A</li>
+                                <li>上課地點: 30803</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 葉乙璇</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div> 
+                    </td>
                     <td class="weekday"></td>
-                    <td class="weekday">會計學 <br> 10513</td>
+                    <td class="weekday">會計學 <br> 10513
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1MI2086</li>
+                                <li>課程名稱: 會計學</li>
+                                <li>開課系所: 日間部四技資訊管理系</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: A</li>
+                                <li>上課地點: 10513</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 賴鍵元</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
                     <td class="weekday"></td>
                     <td class="holiday"></td>
                 </tr>
@@ -245,9 +625,39 @@
                     <td class="ClassTime">第8節 <br> (16:10-17:00)</td>
                     <td class="holiday"></td>
                     <td class="weekday"></td>
-                    <td class="weekday">網頁設計 <br> 30803</td>
+                    <td class="weekday">網頁設計 <br> 30803
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1MI1045</li>
+                                <li>課程名稱: 網頁設計</li>
+                                <li>開課系所: 日間部四技資訊管理系</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: A</li>
+                                <li>上課地點: 30803</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 葉乙璇</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div> 
+                    </td>
                     <td class="weekday"></td>
-                    <td class="weekday">會計學 <br> 10513</td>
+                    <td class="weekday">會計學 <br> 10513
+                        <div class="hint">
+                            <ul>
+                                <li>課號: 1MI2086</li>
+                                <li>課程名稱: 會計學</li>
+                                <li>開課系所: 日間部四技資訊管理系</li>
+                                <li>開課年級: 1年級</li>
+                                <li>開課班級: A</li>
+                                <li>上課地點: 10513</li>
+                                <li>學分: 3</li>
+                                <li>教師姓名: 賴鍵元</li>
+                                <li>必選修: 專業必修</li>
+                                <li>冊別: 1</li>
+                            </ul>
+                        </div>
+                    </td>
                     <td class="weekday"></td>
                     <td class="holiday"></td>
                 </tr>
