@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="img/resume/icon.jpg" type="image/x-icon">
     <title>陳奕安的個人履歷</title>
     <style>
+        :root{
+            --width: 12.14285714%;
+        }
         *{
             padding: 0;
             margin: 0;
@@ -75,7 +78,7 @@
         table th{
             background-color: #AFC8DE;
             height: 40px;
-            width: 12.14285714%;
+            width: var(--width);
         }
         table th:first-child{
             width: 15%;
@@ -103,9 +106,9 @@
             opacity: 0;
             top: -50px;
             left: 130px;
-            width: 250px;
+            width: 230px;
             padding: 10px 0px;
-            font-size: 16px;
+            font-size: 12px;
             position: absolute;
             color: #000;
             background-color: #FEF8D2;
@@ -115,12 +118,16 @@
             transform: translateY(-30%);
             transition: .3s;
         }
+        table .course:hover{
+            transform: scale(1.1);
+        }
         table .weekday:hover{
+            z-index: 2;
             color: #F5F8FF;
             background-color: #9BA6C4;
         }
         table .weekday:hover .hint{
-            z-index: 2;
+            z-index: 3;
             transform: translateY(0);
             opacity: 1;
         }
@@ -155,28 +162,28 @@
             <ol class="mt-8">
                 <li>
                     <h3>
-                        <img src="img/resume/school01.jpg" alt="">
-                        <a href="">臺北市內湖區明湖國民小學</a>
+                        <img src="img/resume/school01.jpg" alt="國小LOGO">
+                        <a href="http://www.mhups.tp.edu.tw/" target="_blank">臺北市內湖區明湖國民小學</a>
                     </h3>
                 </li>
                 <li>
                     <h3>
-                        <img src="img/resume/school02.jpg" alt="">
-                        <a href="">臺北市立明湖國民中學</a>
-                    </h3>
-
-                </li>
-                <li>
-                    <h3>
-                        <img src="img/resume/school03.jpg" alt="">
-                        <a href="">臺北市立內湖高級工業職業學校</a>
+                        <img src="img/resume/school02.jpg" alt="國中LOGO">
+                        <a href="https://www.mhjh.tp.edu.tw/" target="_blank">臺北市立明湖國民中學</a>
                     </h3>
 
                 </li>
                 <li>
                     <h3>
-                        <img src="img/resume/school04.jpg" alt="">
-                        <a href="">亞東科技大學</a>
+                        <img src="img/resume/school03.jpg" alt="高職LOGO">
+                        <a href="https://web.nihs.tp.edu.tw/" target="_blank">臺北市立內湖高級工業職業學校</a>
+                    </h3>
+
+                </li>
+                <li>
+                    <h3>
+                        <img src="img/resume/school04.jpg" alt="科大LOGO">
+                        <a href="https://www.aeust.edu.tw/" target="_blank">亞東科技大學</a>
                     </h3>
                 </li>
             </ol>
@@ -210,7 +217,7 @@
                     <td class="ClassTime">第1節<br>(08:10-09:00)</td>
                     <td class="holiday"></td>
                     <td class="weekday"></td>
-                    <td class="weekday">英文 <br> 10414
+                    <td class="weekday course">英文 <br> 10414
                         <div class="hint">
                             <ul>
                                 <li>課號: 1CC1003</li>
@@ -226,7 +233,7 @@
                             </ul>
                         </div>
                     </td>
-                    <td class="weekday">進階程式設計 <br> 30803
+                    <td class="weekday course">進階程式設計 <br> 30803
                         <div class="hint">
                             <ul>
                                 <li>課號: 1MI1049</li>
@@ -243,7 +250,7 @@
                         </div>
                     </td>
                     <td class="weekday"></td>
-                    <td class="weekday">法律與生活 <br> 10402
+                    <td class="weekday course">法律與生活 <br> 10402
                         <div class="hint">
                             <ul>
                                 <li>課號: 1CC1351D</li>
@@ -264,7 +271,7 @@
                 <tr>
                     <td class="ClassTime">第2節 <br> (09:10-10:00)</td>
                     <td class="holiday"></td>
-                    <td class="weekday">經濟學 <br> 10417
+                    <td class="weekday course">經濟學 <br> 10417
                         <div class="hint">
                             <ul>
                                 <li>課號: 1HM1002</li>
@@ -280,7 +287,7 @@
                             </ul>
                         </div>
                     </td>
-                    <td class="weekday">英文 <br> 10414
+                    <td class="weekday course">英文 <br> 10414
                         <div class="hint">
                             <ul>
                                 <li>課號: 1CC1003</li>
@@ -296,7 +303,7 @@
                             </ul>
                         </div>
                     </td>
-                    <td class="weekday">進階程式設計 <br> 30803
+                    <td class="weekday course">進階程式設計 <br> 30803
                         <div class="hint">
                             <ul>
                                 <li>課號: 1MI1049</li>
@@ -312,7 +319,7 @@
                             </ul>
                         </div>
                     </td>
-                    <td class="weekday">資訊管理導論 <br> 10407
+                    <td class="weekday course">資訊管理導論 <br> 10407
                         <div class="hint">
                             <ul>
                                 <li>課號: 1MI1001</li>
@@ -328,7 +335,7 @@
                             </ul>
                         </div>
                     </td>
-                    <td class="weekday">法律與生活 <br> 10402
+                    <td class="weekday course">法律與生活 <br> 10402
                         <div class="hint">
                             <ul>
                                 <li>課號: 1CC1351D</li>
@@ -349,7 +356,7 @@
                 <tr>
                     <td class="ClassTime">第3節 <br> (10:10-11:00)</td>
                     <td class="holiday"></td>
-                    <td class="weekday">經濟學 <br> 10417
+                    <td class="weekday course">經濟學 <br> 10417
                         <div class="hint">
                             <ul>
                                 <li>課號: 1HM1002</li>
@@ -365,7 +372,7 @@
                             </ul>
                         </div>
                     </td>
-                    <td class="weekday">國文 <br> 10506
+                    <td class="weekday course">國文 <br> 10506
                         <div class="hint">
                             <ul>
                                 <li>課號: 1CC1001</li>
@@ -382,7 +389,7 @@
                         </div>
                     </td>
                     <td class="weekday"></td>
-                    <td class="weekday">資訊管理導論 <br> 10407
+                    <td class="weekday course">資訊管理導論 <br> 10407
                         <div class="hint">
                             <ul>
                                 <li>課號: 1MI1001</li>
@@ -398,7 +405,7 @@
                             </ul>
                         </div>
                     </td>
-                    <td class="weekday">體育(撞球) <br> W0101
+                    <td class="weekday course">體育(撞球) <br> W0101
                         <div class="hint">
                             <ul>
                                 <li>課號: 1CC1998I</li>
@@ -419,7 +426,7 @@
                 <tr>
                     <td class="ClassTime">第4節 <br> (11:10-12:00)</td>
                     <td class="holiday"></td>
-                    <td class="weekday">經濟學 <br> 10417
+                    <td class="weekday course">經濟學 <br> 10417
                         <div class="hint">
                             <ul>
                                 <li>課號: 1HM1002</li>
@@ -435,7 +442,7 @@
                             </ul>
                         </div>
                     </td>
-                    <td class="weekday">國文 <br> 10506
+                    <td class="weekday course">國文 <br> 10506
                         <div class="hint">
                             <ul>
                                 <li>課號: 1CC1001</li>
@@ -452,7 +459,7 @@
                         </div>
                     </td>
                     <td class="weekday"></td>
-                    <td class="weekday">資訊管理導論 <br> 10407
+                    <td class="weekday course">資訊管理導論 <br> 10407
                         <div class="hint">
                             <ul>
                                 <li>課號: 1MI1001</li>
@@ -468,7 +475,7 @@
                             </ul>
                         </div>
                     </td>
-                    <td class="weekday">體育(撞球) <br> W0101
+                    <td class="weekday course">體育(撞球) <br> W0101
                         <div class="hint">
                             <ul>
                                 <li>課號: 1CC1998I</li>
@@ -489,7 +496,7 @@
                 <tr>
                     <td class="ClassTime">第5節 <br> (13:10-14:00)</td>
                     <td class="holiday"></td>
-                    <td class="weekday">進階程式設計 <br> 30803
+                    <td class="weekday course">進階程式設計 <br> 30803
                         <div class="hint">
                             <ul>
                                 <li>課號: 1MI1049</li>
@@ -505,7 +512,7 @@
                             </ul>
                         </div>
                     </td>
-                    <td class="weekday">網頁設計 <br> 30803
+                    <td class="weekday course">網頁設計 <br> 30803
                         <div class="hint">
                             <ul>
                                 <li>課號: 1MI1045</li>
@@ -529,7 +536,7 @@
                 <tr>
                     <td class="ClassTime">第6節 <br> (14:10-15:00)</td>
                     <td class="holiday"></td>
-                    <td class="weekday">進階程式設計 <br> 30803
+                    <td class="weekday course">進階程式設計 <br> 30803
                         <div class="hint">
                             <ul>
                                 <li>課號: 1MI1049</li>
@@ -545,7 +552,7 @@
                             </ul>
                         </div>
                     </td>
-                    <td class="weekday">網頁設計 <br> 30803
+                    <td class="weekday course">網頁設計 <br> 30803
                         <div class="hint">
                             <ul>
                                 <li>課號: 1MI1045</li>
@@ -562,7 +569,7 @@
                         </div>    
                     </td>
                     <td class="weekday"></td>
-                    <td class="weekday">會計學 <br> 10513
+                    <td class="weekday course">會計學 <br> 10513
                         <div class="hint">
                             <ul>
                                 <li>課號: 1MI2086</li>
@@ -585,7 +592,7 @@
                     <td class="ClassTime">第7節 <br> (15:10-16:00)</td>
                     <td class="holiday"></td>
                     <td class="weekday"></td>
-                    <td class="weekday">網頁設計 <br> 30803
+                    <td class="weekday course">網頁設計 <br> 30803
                         <div class="hint">
                             <ul>
                                 <li>課號: 1MI1045</li>
@@ -602,7 +609,7 @@
                         </div> 
                     </td>
                     <td class="weekday"></td>
-                    <td class="weekday">會計學 <br> 10513
+                    <td class="weekday course">會計學 <br> 10513
                         <div class="hint">
                             <ul>
                                 <li>課號: 1MI2086</li>
@@ -625,7 +632,7 @@
                     <td class="ClassTime">第8節 <br> (16:10-17:00)</td>
                     <td class="holiday"></td>
                     <td class="weekday"></td>
-                    <td class="weekday">網頁設計 <br> 30803
+                    <td class="weekday course">網頁設計 <br> 30803
                         <div class="hint">
                             <ul>
                                 <li>課號: 1MI1045</li>
@@ -642,7 +649,7 @@
                         </div> 
                     </td>
                     <td class="weekday"></td>
-                    <td class="weekday">會計學 <br> 10513
+                    <td class="weekday course">會計學 <br> 10513
                         <div class="hint">
                             <ul>
                                 <li>課號: 1MI2086</li>
