@@ -118,3 +118,6 @@ a[href^="mailto"]::after{
     margin-left: 5px;
     vertical-align: middle;
 }
+.h_img{
+    border-radius: 50%;
+}
