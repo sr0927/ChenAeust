@@ -3,702 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/resume/icon.jpg" type="image/x-icon">
-    <title>陳奕安的個人履歷</title>
-    <style>
-        :root{
-            --width: 12.14285714%;
-        }
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        body{
-            background-color: #F4F5F0;
-        }
-        img{
-            width: 100%;
-        }
-        ol,ul{
-            padding-inline-start: 40px;
-        }
-        .Container{
-            background-color: #FEFFFA;
-            width: 980px;
-            margin: 0px auto;
-            padding: 80px 20px;
-            box-shadow: 0px 0px 1px 1px rgb(231, 231, 231);
-        }
-        .Title{
-            font-size: 36px;
-        }
-        .img{
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-        }
-        hr{
-            margin: 20px 0px;
-        }
-        .motto{
-            border-left: 3px solid rgb(128, 127, 127);
-            margin-left: 8px;
-            padding-left: 20px;
-        }
-        .Portfolio ul{
-            list-style: none;
-        }
-        .Education img{
-            width: 30px;
-            margin-right: 16px;
-        }
-        .certificate-img{
-            margin-top: 4px;
-            width: 300px;
-        }
-        table{
-            margin: 0px auto;
-            width: 940px;
-            text-align: center;
-            background-color: #C6D4FA;
-            border: 2px solid rgb(75, 75, 75);
-        }
-        table caption{
-            font-size: 24px;
-            color: #F5F8FF;
-            background-color: #607D96;
-            line-height: 50px;
-            height: 50px;
-            border-top: 2px solid rgb(75, 75, 75);
-            border-left: 2px solid rgb(75, 75, 75);
-            border-right: 2px solid rgb(75, 75, 75);
-        }
-        table,th,td{
-            border-collapse: collapse;
-        }
-        table th{
-            background-color: #AFC8DE;
-            height: 40px;
-            width: var(--width);
-        }
-        table th:first-child{
-            width: 15%;
-        }
-        table th:not(th:first-child){
-            border-left: 1px solid #7886AD;
-        }
-        table td{
-            border: 1px solid #7886AD;
-            height: 60px;
-        }
-        table ul{
-            list-style: none;
-            padding-inline-start: 10px;
-        }
-        table .ClassTime{
-            background-color: #CDBBFD;
-        }
-        table .weekday{
-            position: relative;
-        }
-        table .hint{
-            pointer-events: none;
-            z-index: -1;
-            opacity: 0;
-            top: -50px;
-            left: 130px;
-            width: 230px;
-            padding: 10px 0px;
-            font-size: 12px;
-            position: absolute;
-            color: #000;
-            background-color: #FEF8D2;
-            box-shadow: 2px 2px 2px 2px rgb(75, 75, 75);
-            text-align: start;
-            z-index: 2;
-            transform: translateY(-30%);
-            transition: .3s;
-        }
-        table .course:hover{
-            transform: scale(1.1);
-        }
-        table .weekday:hover{
-            z-index: 2;
-            color: #F5F8FF;
-            background-color: #9BA6C4;
-        }
-        table .weekday:hover .hint{
-            z-index: 3;
-            transform: translateY(0);
-            opacity: 1;
-        }
-        table .holiday{
-            background-color: #A8A8E3;
-        }
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-        .mt-8{
-            margin-top: 8px;
-        }
-        .mt-32{
-            margin-top: 32px;
-        }
-        .mb-32{
-            margin-bottom: 32px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://use.fontawesome.com/76cafe0d45.js"></script>
+    <script src="https://kit.fontawesome.com/d64ba18461.js" crossorigin="anonymous"></script>
+    
+
+    <title>個人網頁</title>
 </head>
 <body>
-    <div class="Container">
-        <h1 class="Title">
-            陳奕安 <br> CHEN, YI-AN
-        </h1>
-        <div class="img mt-32">
-            <img src="img/resume/110111130.jpg" alt="頭像" width="300">
+    <header>
+        <nav>
+            <div class="container navbar">
+                <ul>
+                    <li><a href="#profile">關於我</a></li>
+                    <li><a href="#skill">技能</a></li>
+                    <li><a href="#portfolio">作品集</a></li>
+                    <li><a href="#contact">聯絡我</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="intro">
+            <h1>陳奕安<br>CHEN YI-AN</h1>
         </div>
-        <hr>
-        <p class="motto">錢是社會的根基 <br> 錢不會背叛人 <br> 唯有利益是絕對</p>
-        <hr>
-        <div class="Portfolio mt-32">
-            <h2 class="Subtitle">作品集</h2>
-            <ul class="mt-8">
-                <li>
-                    <a href="html01.html" target="_blank">HTML練習01</a>
-                </li>
-                <li>
-                    <a href="css01.html" target="_blank">CSS基礎練習-行內樣式表</a>
-                </li>
-                <li>
-                    <a href="css02.html" target="_blank">CSS基礎練習-內部樣式表</a>
-                </li>
-                <li>
-                    <a href="css03.html" target="_blank">CSS基礎練習-外部樣式表</a>
-                </li>
-                <li>
-                    <a href="css_basic.html" target="_blank">CSS基礎練習-基礎樣式表</a>
-                </li>
-                <li>
-                    <a href="resume1.html" target="_blank">個人履歷版型01</a>
-                </li>
-                <li>
-                    <a href="resume2.html" target="_blank">個人履歷版型02</a>
-                </li>
-            </ul>
+        <section class="profile" id="profile">
+            <div class="container">
+                <div class="item">
+                    <div class="img">
+                        <img src="img/web/dog.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <h2>陳奕安<br>CHEN YI-AN</h2>
+                    <ul>
+                        <li><a href="resume.html" target="_blank"><i class="fa fa-file" aria-hidden="true"></i>個人履歷</a></li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>Taoyuan, Taiwan</li>
+                    </ul>
+                    <ul class="link">
+                        <li><a href="https://github.com/sr0927" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a href="discordapp.com/users/SR#8762" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+                        <li><a href="https://line.me/ti/p/ZQg-5JWiY2" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                        <li><a href="https://www.facebook.com/sr.0927" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                        <li><a href="https://codepen.io/SR0927" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>    
+        </section>
+        <section class="skill" id="skill">
+            <div class="container">
+                <h2 class="subtitle">技能<span>SKILLS</span></h2>
+                <hr>
+                <ul>
+                    <li><i class="fa fa-html5" aria-hidden="true"></i>HTML</li>
+                    <li><i class="fa-brands fa-css3-alt"></i>CSS</li>
+                    <li><i class="fa-brands fa-js"></i>JavaScript</li>
+                    <li><i class="fa-brands fa-bootstrap"></i>Bootstrap</li>
+                    <li><i class="fa-brands fa-wordpress"></i>WordPress</li>
+                    <li><i class="fa-brands fa-vuejs"></i>Vue.js</li>
+                    <li><i class="fa-brands fa-node-js"></i>Node.js</li>
+                    <li><i class="fa-brands fa-npm"></i>NPM</li>
+                    <li><i class="fa-brands fa-php"></i>PHP</li>
+                </ul>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="subtitle">作品集<span>PORTFOLIO</span></h2>
+                <hr>
+                <div class="wrap">
+                    <div class="item">
+                        <h3>HTML</h3>
+                        <hr>
+                        <ul>
+                            <li><a href="html01.html" target="_blank">HTML練習 01</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h3>CSS</h3>
+                        <hr>
+                        <ul>
+                            <li><a href="css01.html" target="_blank">CSS基礎練習 - 行內樣式表</a></li>
+                            <li><a href="css02.html" target="_blank">CSS基礎練習 - 內部樣式表</a></li>
+                            <li><a href="css03.html" target="_blank">CSS基礎練習 - 外部樣式表</a></li>
+                            <li><a href="css_basic.html" target="_blank">CSS基礎練習 - 基礎樣式表 </a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h3>個人履歷版型</h3>
+                        <hr>
+                        <ul>
+                            <li><a href="resume1.html" target="_blank">個人履歷版型01</a></li>
+                            <li><a href="resume2.html" target="_blank">個人履歷版型02</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel">
+                    <ul>
+                        <li class="carousel-item"><img src="img/web/koparty.PNG" alt=""></li>
+                        <li class="carousel-item"><img src="img/web/threezero.PNG" alt=""></li>
+                        <li class="carousel-item"><img src="img/web/yuanlixin.PNG" alt=""></li>
+                    </ul>
+                    <button class="carousel-btn previous-btn" onclick="click_previous()"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button>
+                    <button class="carousel-btn next-btn" onclick="click_next()"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="subtitle">聯絡方式<span>CONTACT</span></h2>
+                <hr>
+                <form action="">
+                    <div class="form-item">
+                        <label for="">姓名: </label>
+                        <input type="text">
+                    </div>
+                    
+                    <div class="form-item">
+                        <label for="">E-MAIL: </label>
+                        <input type="text">
+                    </div>
+                    
+                    <div class="form-item">
+                        <label for="">主旨: </label>
+                        <input type="text">
+                    </div>
+                    
+                    <div class="form-item">
+                        <label for="">說明:</label>
+                        <input type="text">
+                    </div>
+                    <button>送出</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <a href="mailto:sr.0927.chen@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>sr.0927.chen@gmail.com</a>
         </div>
-        <div class="Education mt-32">
-            <h2 class="SubTitle">學歷</h2>
-            <ol class="mt-8">
-                <li>
-                    <h3>
-                        <img src="img/resume/school01.jpg" alt="國小LOGO">
-                        <a href="http://www.mhups.tp.edu.tw/" target="_blank">臺北市內湖區明湖國民小學</a>
-                    </h3>
-                </li>
-                <li>
-                    <h3>
-                        <img src="img/resume/school02.jpg" alt="國中LOGO">
-                        <a href="https://www.mhjh.tp.edu.tw/" target="_blank">臺北市立明湖國民中學</a>
-                    </h3>
-
-                </li>
-                <li>
-                    <h3>
-                        <img src="img/resume/school03.jpg" alt="高職LOGO">
-                        <a href="https://web.nihs.tp.edu.tw/" target="_blank">臺北市立內湖高級工業職業學校</a>
-                    </h3>
-
-                </li>
-                <li>
-                    <h3>
-                        <img src="img/resume/school04.jpg" alt="科大LOGO">
-                        <a href="https://www.aeust.edu.tw/" target="_blank">亞東科技大學</a>
-                    </h3>
-                </li>
-            </ol>
-        </div>
-        <div class="Certificate mt-32">
-            <h2 class="SubTitle">證照</h2>
-            <ul class="mt-8">
-                <li>
-                    <h3><a href="https://skill.tcte.edu.tw/notice.php">電腦軟體應用丙級</a></h3>
-                    <br>
-                    <img src="img/resume/01.jpg" class="certificate-img" alt="">
-                </li>
-            </ul>
-        </div>
-        <table class="mt-32 mb-32">
-            <caption>功課表</caption>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>日</th>
-                    <th>一</th>
-                    <th>二</th>
-                    <th>三</th>
-                    <th>四</th>
-                    <th>五</th>
-                    <th>六</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="ClassTime">第1節<br>(08:10-09:00)</td>
-                    <td class="holiday"></td>
-                    <td class="weekday"></td>
-                    <td class="weekday course">英文 <br> 10414
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1CC1003</li>
-                                <li>課程名稱: 英文</li>
-                                <li>開課系所: 日間部四技通識中心</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: S</li>
-                                <li>上課地點: 10414</li>
-                                <li>學分: 2</li>
-                                <li>教師姓名: 陳韻如</li>
-                                <li>必選修: 基礎通識</li>
-                                <li>冊別: 2</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday course">進階程式設計 <br> 30803
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1MI1049</li>
-                                <li>課程名稱: 進階程式設計</li>
-                                <li>開課系所: 日間部四技資訊管理系</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: S</li>
-                                <li>上課地點: 30803</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 陳鵬文</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday"></td>
-                    <td class="weekday course">法律與生活 <br> 10402
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1CC1351D</li>
-                                <li>課程名稱: 法律與生活</li>
-                                <li>開課系所: 日間部四技通識中心</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: P</li>
-                                <li>上課地點: 10402</li>
-                                <li>學分: 2</li>
-                                <li>教師姓名: 陳俊豪</li>
-                                <li>必選修: 博雅通識</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="holiday"></td>
-                </tr>
-                <tr>
-                    <td class="ClassTime">第2節 <br> (09:10-10:00)</td>
-                    <td class="holiday"></td>
-                    <td class="weekday course">經濟學 <br> 10417
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1HM1002</li>
-                                <li>課程名稱: 經濟學</li>
-                                <li>開課系所: 日間部四技醫護暨管理學院</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: S</li>
-                                <li>上課地點: 10417</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 洪維強</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday course">英文 <br> 10414
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1CC1003</li>
-                                <li>課程名稱: 英文</li>
-                                <li>開課系所: 日間部四技通識中心</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: S</li>
-                                <li>上課地點: 10414</li>
-                                <li>學分: 2</li>
-                                <li>教師姓名: 陳韻如</li>
-                                <li>必選修: 基礎通識</li>
-                                <li>冊別: 2</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday course">進階程式設計 <br> 30803
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1MI1049</li>
-                                <li>課程名稱: 進階程式設計</li>
-                                <li>開課系所: 日間部四技資訊管理系</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: S</li>
-                                <li>上課地點: 30803</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 陳鵬文</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday course">資訊管理導論 <br> 10407
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1MI1001</li>
-                                <li>課程名稱: 資訊管理導論</li>
-                                <li>開課系所: 日間部四技資訊管理系</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: A</li>
-                                <li>上課地點: 10407</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 蔡文隆</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday course">法律與生活 <br> 10402
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1CC1351D</li>
-                                <li>課程名稱: 法律與生活</li>
-                                <li>開課系所: 日間部四技通識中心</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: P</li>
-                                <li>上課地點: 10402</li>
-                                <li>學分: 2</li>
-                                <li>教師姓名: 陳俊豪</li>
-                                <li>必選修: 博雅通識</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="holiday"></td>
-                </tr>
-                <tr>
-                    <td class="ClassTime">第3節 <br> (10:10-11:00)</td>
-                    <td class="holiday"></td>
-                    <td class="weekday course">經濟學 <br> 10417
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1HM1002</li>
-                                <li>課程名稱: 經濟學</li>
-                                <li>開課系所: 日間部四技醫護暨管理學院</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: S</li>
-                                <li>上課地點: 10417</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 洪維強</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday course">國文 <br> 10506
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1CC1001</li>
-                                <li>課程名稱: 國文</li>
-                                <li>開課系所: 日間部四技通識中心</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: S</li>
-                                <li>上課地點: 10506</li>
-                                <li>學分: 2</li>
-                                <li>教師姓名: 張又勻</li>
-                                <li>必選修: 基礎通識</li>
-                                <li>冊別: 2</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday"></td>
-                    <td class="weekday course">資訊管理導論 <br> 10407
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1MI1001</li>
-                                <li>課程名稱: 資訊管理導論</li>
-                                <li>開課系所: 日間部四技資訊管理系</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: A</li>
-                                <li>上課地點: 10407</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 蔡文隆</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday course">體育(撞球) <br> W0101
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1CC1998I</li>
-                                <li>課程名稱: 體育(撞球)</li>
-                                <li>開課系所: 日間部四技通識中心</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: P</li>
-                                <li>上課地點: W0101</li>
-                                <li>學分: 0</li>
-                                <li>教師姓名: 徐煒杰</li>
-                                <li>必選修: 基礎通識</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="holiday"></td>
-                </tr>
-                <tr>
-                    <td class="ClassTime">第4節 <br> (11:10-12:00)</td>
-                    <td class="holiday"></td>
-                    <td class="weekday course">經濟學 <br> 10417
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1HM1002</li>
-                                <li>課程名稱: 經濟學</li>
-                                <li>開課系所: 日間部四技醫護暨管理學院</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: S</li>
-                                <li>上課地點: 10417</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 洪維強</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday course">國文 <br> 10506
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1CC1001</li>
-                                <li>課程名稱: 國文</li>
-                                <li>開課系所: 日間部四技通識中心</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: S</li>
-                                <li>上課地點: 10506</li>
-                                <li>學分: 2</li>
-                                <li>教師姓名: 張又勻</li>
-                                <li>必選修: 基礎通識</li>
-                                <li>冊別: 2</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday"></td>
-                    <td class="weekday course">資訊管理導論 <br> 10407
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1MI1001</li>
-                                <li>課程名稱: 資訊管理導論</li>
-                                <li>開課系所: 日間部四技資訊管理系</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: A</li>
-                                <li>上課地點: 10407</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 蔡文隆</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday course">體育(撞球) <br> W0101
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1CC1998I</li>
-                                <li>課程名稱: 體育(撞球)</li>
-                                <li>開課系所: 日間部四技通識中心</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: P</li>
-                                <li>上課地點: W0101</li>
-                                <li>學分: 0</li>
-                                <li>教師姓名: 徐煒杰</li>
-                                <li>必選修: 基礎通識</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="holiday"></td>
-                </tr>
-                <tr>
-                    <td class="ClassTime">第5節 <br> (13:10-14:00)</td>
-                    <td class="holiday"></td>
-                    <td class="weekday course">進階程式設計 <br> 30803
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1MI1049</li>
-                                <li>課程名稱: 進階程式設計</li>
-                                <li>開課系所: 日間部四技資訊管理系</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: S</li>
-                                <li>上課地點: 30803</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 陳鵬文</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday course">網頁設計 <br> 30803
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1MI1045</li>
-                                <li>課程名稱: 網頁設計</li>
-                                <li>開課系所: 日間部四技資訊管理系</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: A</li>
-                                <li>上課地點: 30803</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 葉乙璇</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div> 
-                    </td>
-                    <td class="weekday"></td>
-                    <td class="weekday"></td>
-                    <td class="weekday"></td>
-                    <td class="holiday"></td>
-                </tr>
-                <tr>
-                    <td class="ClassTime">第6節 <br> (14:10-15:00)</td>
-                    <td class="holiday"></td>
-                    <td class="weekday course">進階程式設計 <br> 30803
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1MI1049</li>
-                                <li>課程名稱: 進階程式設計</li>
-                                <li>開課系所: 日間部四技資訊管理系</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: S</li>
-                                <li>上課地點: 30803</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 陳鵬文</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday course">網頁設計 <br> 30803
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1MI1045</li>
-                                <li>課程名稱: 網頁設計</li>
-                                <li>開課系所: 日間部四技資訊管理系</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: A</li>
-                                <li>上課地點: 30803</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 葉乙璇</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>    
-                    </td>
-                    <td class="weekday"></td>
-                    <td class="weekday course">會計學 <br> 10513
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1MI2086</li>
-                                <li>課程名稱: 會計學</li>
-                                <li>開課系所: 日間部四技資訊管理系</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: A</li>
-                                <li>上課地點: 10513</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 賴鍵元</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday"></td>
-                    <td class="holiday"></td>
-                </tr>
-                <tr>
-                    <td class="ClassTime">第7節 <br> (15:10-16:00)</td>
-                    <td class="holiday"></td>
-                    <td class="weekday"></td>
-                    <td class="weekday course">網頁設計 <br> 30803
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1MI1045</li>
-                                <li>課程名稱: 網頁設計</li>
-                                <li>開課系所: 日間部四技資訊管理系</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: A</li>
-                                <li>上課地點: 30803</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 葉乙璇</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div> 
-                    </td>
-                    <td class="weekday"></td>
-                    <td class="weekday course">會計學 <br> 10513
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1MI2086</li>
-                                <li>課程名稱: 會計學</li>
-                                <li>開課系所: 日間部四技資訊管理系</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: A</li>
-                                <li>上課地點: 10513</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 賴鍵元</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday"></td>
-                    <td class="holiday"></td>
-                </tr>
-                <tr>
-                    <td class="ClassTime">第8節 <br> (16:10-17:00)</td>
-                    <td class="holiday"></td>
-                    <td class="weekday"></td>
-                    <td class="weekday course">網頁設計 <br> 30803
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1MI1045</li>
-                                <li>課程名稱: 網頁設計</li>
-                                <li>開課系所: 日間部四技資訊管理系</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: A</li>
-                                <li>上課地點: 30803</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 葉乙璇</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div> 
-                    </td>
-                    <td class="weekday"></td>
-                    <td class="weekday course">會計學 <br> 10513
-                        <div class="hint">
-                            <ul>
-                                <li>課號: 1MI2086</li>
-                                <li>課程名稱: 會計學</li>
-                                <li>開課系所: 日間部四技資訊管理系</li>
-                                <li>開課年級: 1年級</li>
-                                <li>開課班級: A</li>
-                                <li>上課地點: 10513</li>
-                                <li>學分: 3</li>
-                                <li>教師姓名: 賴鍵元</li>
-                                <li>必選修: 專業必修</li>
-                                <li>冊別: 1</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td class="weekday"></td>
-                    <td class="holiday"></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
