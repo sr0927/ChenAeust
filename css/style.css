@@ -93,6 +93,7 @@ h1{
     color: #fff;
     font-size: 48px;
     text-align: center;
+    transition: .5s;
 }
 h2{
     font-size: 36px;
