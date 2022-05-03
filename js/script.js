@@ -45,15 +45,13 @@ function getScrollTop(){
     }
 }
 
-var url = "https://script.google.com/macros/s/AKfycbzlqYeyZUTyt8KxaI2oZ_gnjfrX11XXT5Y0mz3xsjdCliZRPVvMbvuRxZ6vRFZKgkCM/exec"
-var listurl = "https://docs.google.com/spreadsheets/d/1Y1kHci7Mi_lIQy4IkP9PX1OvRIkzM1xHPVu-9-Oiswk/edit?usp=sharing"
 
 carousel_item = document.querySelectorAll(".carousel-item");
 navbar = document.querySelector("nav");
 form_btn = document.querySelector("#form-btn");
 item_list = Array.from(carousel_item);
 carousel();
-
+getScrollTop();
 window.addEventListener("scroll",(e)=>{
     getScrollTop()
 })
@@ -64,19 +62,51 @@ form_btn.addEventListener("click",(e)=>{
     let email = document.querySelector("#form-email").value;
     let main = document.querySelector("#form-main").value;
     let message = document.querySelector("#form-message").value;
+    fn = document.getElementById("form-name");
+    fe = document.getElementById("form-email");
+    fm1 = document.getElementById("form-main");
+    fm2 = document.getElementById("form-message");
     var date = new Date();
-    $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbx8-S3LBMFGeGzF5TFdxL2DNYJ03r_KKvfabPjKapyYnEcZTTs3kPNXFabRormAjRaT/exec",
-        data: {
-            "date": date,
-            "name": name,
-            "email": email,
-            "main": main,
-            "message": message
-        },
-        success: function(response) {
-          if(response == "成功"){
-          }
-        },
-    });
+    console.log(fn)
+    if(fn.value == "" || fe.value == "" || fm1.value == "" || fm2.value == ""){
+        swal({
+            title: "送出失敗",
+            text: "內容不可空白",
+            icon: "error",
+            button: "關閉",
+        });
+    }else{
+        $.ajax({
+            url: "https://script.google.com/macros/s/AKfycbx8-S3LBMFGeGzF5TFdxL2DNYJ03r_KKvfabPjKapyYnEcZTTs3kPNXFabRormAjRaT/exec",
+            data: {
+                "date": date,
+                "name": name,
+                "email": email,
+                "main": main,
+                "message": message
+            },
+            success: function(response) {
+            if(response == "成功"){
+                swal({
+                    title: "成功送出",
+                    text: "感謝你的聯絡",
+                    icon: "success",
+                    button: "關閉",
+                });
+            }else{
+                swal({
+                    title: "送出失敗",
+                    icon: "error",
+                    button: "關閉",
+                });
+            }
+            },
+        });    
+    }
+    document.getElementById("form-name").value = null;
+    document.getElementById("form-email").value = null;
+    document.getElementById("form-main").value = null;
+    document.getElementById("form-message").value = null;
+
+    
 })
