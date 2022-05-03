@@ -96,6 +96,7 @@ h1{
     color: #fff;
     font-size: 48px;
     text-align: center;
+    height: 96px;
     transition: .5s;
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 700;
