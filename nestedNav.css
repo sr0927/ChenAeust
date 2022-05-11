@@ -44,7 +44,7 @@ nav a:hover{
 .item-list{
     display: none;
     position: absolute;
-    transform: translateY(-45px) translateX(191px);
+    transform: translateY(-45px) translateX(189px);
     background-color: #384D59;
 }
 .child-menu-item:not(.child-menu-item:first-child),
