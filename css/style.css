@@ -116,11 +116,13 @@ h2 span{
 .profile{
     padding-top: 160px;
 }
-.profile .container{
-    flex-flow: row;
+.profile .p-container{
+    margin: 0px auto;
+    max-width: 980px;
 }
 .profile .item{
     width: 50%;
+    float: left;
 }
 .profile .img{
     margin: 0px auto;
@@ -135,6 +137,7 @@ h2 span{
     top: -100px;
 }
 .profile .content{
+    float: right;
     padding-top: 80px;
     width: 50%;
 }
@@ -202,15 +205,12 @@ h2 span{
     margin-bottom: 50px;
 }
 .portfolio .wrap{
-    /*
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    */
 }
 .portfolio .item{
-    margin-right: 30px;
-    float: left;
+    margin-top: 20px;
     text-align: center;
     width: 30%;
 }
