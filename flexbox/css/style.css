@@ -44,6 +44,11 @@ nav a:hover{
     font-family: 'Zen Loop', cursive;
 }
 
+.top-end{
+    position: absolute;
+    top: 0px;
+}
+
 .photolist ul{
     display: flex;
     flex-wrap: wrap;
