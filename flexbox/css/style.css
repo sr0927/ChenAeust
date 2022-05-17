@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop:ital@1&display=swap');
+body,ul{
+    margin: 0px;
+}
+header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+nav{
+    background-color: #85b4f2;
+}
+
+nav ul{
+    display: flex;
+    justify-content: right;
+}
+nav li{
+    list-style: none;
+    padding: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+nav a:hover{
+    background-color: #73482F;
+    color: #aff;
+    transition: background-color 1s linear, color 1s ease-in;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(167, 200, 242, .8);
+}
+
+.title{
+    text-align: center;
+    font-family: 'Zen Loop', cursive;
+}
+
+.photolist ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+}
+
+.photolist li{
+    list-style: none;
+    margin: 10px;
+}
+
+.photolist img{
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.photolist .emptyitem{
+    width: 200px;
+}
+
+.gotop{
+    font-size: 60px;
+    color: #A68863;
+    position: fixed;
+    right: 0px;
+    bottom: 50px;
+}
