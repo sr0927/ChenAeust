@@ -77,3 +77,22 @@ nav a:hover{
     right: 0px;
     bottom: 50px;
 }
+.totop{
+    font-size: 60px;
+    color: #A68863;
+    position: fixed;
+    left: 0px;
+    bottom: 50px;
+}
+.div{
+    padding: 0px 5px;
+    position: fixed;
+    right: 0px;
+    bottom: 30px;
+}
+.js{
+    padding: 0px 5px;
+    position: fixed;
+    left: 0px;
+    bottom: 30px;
+}
