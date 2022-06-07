@@ -1,0 +1,19 @@
+.contact-img{
+    width: 30%;
+}
+
+.form-container{
+    width: 70%;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.form-container{
+    margin: unset;
+}

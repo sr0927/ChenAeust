@@ -1,0 +1,4 @@
+.food-menu-item:hover{
+    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
+}
